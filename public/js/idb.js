@@ -31,8 +31,6 @@ function saveRecord(record) {
     const budgetObjectStore = transaction.objectStore('budget');
   
     const getAll = budgetObjectStore.getAll();
-  
-  }
 
 getAll.onsuccess = function() {
     if (getAll.result.length > 0) {
@@ -58,6 +56,7 @@ getAll.onsuccess = function() {
         .catch(err => {
           console.log(err);
         });
+    }
     }
   };
   window.addEventListener('online', uploadBudget);
