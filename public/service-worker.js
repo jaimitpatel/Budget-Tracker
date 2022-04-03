@@ -5,6 +5,7 @@ const FILES_TO_CACHE = [
     './index.html',
     '/css/styles.css',
     '/js/index.js',
+    '/js/idb.js'
 ];
 
 self.addEventListener('fetch', function (e) {
@@ -35,11 +36,13 @@ self.addEventListener('install', function (e) {
         cacheKeeplist.push(CACHE_NAME);
 
 
-return Promise.all(keyList.map(function (key, i) {
-  if (cacheKeeplist.indexOf(key) === -1) {
-    console.log('deleting cache : ' + keyList[i] );
-    return caches.delete(keyList[i]);
-  }
-}
-)
-);
+             return Promise.all(keyList.map(function (key, i) {
+                if (cacheKeeplist.indexOf(key) === -1) {
+                console.log('deleting cache : ' + keyList[i] );
+                return caches.delete(keyList[i]);
+                  }
+                })
+            );
+        })
+    );
+});
