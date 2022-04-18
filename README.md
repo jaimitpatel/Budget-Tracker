@@ -3,7 +3,7 @@
 ## Github URL 🌐
 [Jaimitpatel](https://github.com/Jaimitpatel/)
 ## Description 📝
-This application is a budget tracker that allows users to keep track of their budget by adding or subtracting funds using custom amounts.
+This application is a search engine for books, that uses google api to pull information about any books that a user searches for. It allows users to login to save their selections or delete it as they wish.
 ## Table of Contents 🗒
 * [Installations](#installations-dependencies-)
 * [Running the App](#running-the-app)
@@ -20,7 +20,7 @@ npm i
 ```
 ## Running the app
 
- https://afternoon-plains-99071.herokuapp.com/
+ https://book-wikia.herokuapp.com/
 This is the link to the deployed application.
 
 
@@ -30,19 +30,24 @@ npm run start
 This will run the server locally.
 
 ## Usage 🏆
-You can view the app directly by going to the heroku link provided, or you can clone the repo, and open the app by opening a terminal in the root directory and typing npm run start, and going to 'localhost:3001' in your browser. You are also able to download the app by clicking 'install budget-tracker' in the url bar of your browser.
+You can view the app directly by going to the heroku link provided, or you can clone the repo, and open the app by opening a terminal in the root directory and typing npm run start, and going to 'localhost:3001/graphql' in your browser. 
 
 ## Technologies Used
 - Mongoose
 - Express
 - Node
-- PWA
-- Service Worker
+- Apollo
+- GraphQL
 
 ## Screenshots
-![image](https://user-images.githubusercontent.com/3880463/161449589-f01fa8c8-cc3c-447d-a160-2317a87c6fc6.png)
-![image](https://user-images.githubusercontent.com/3880463/161449617-a78dcada-5411-4929-b927-081545126061.png)
-![image](https://user-images.githubusercontent.com/3880463/161449671-074ef46d-20b3-4347-bcc3-39a8bed92646.png)
+![image](https://user-images.githubusercontent.com/3880463/163892794-d6c3262f-3872-4c56-8f3b-3c1f1d5c0c9b.png)
+![image](https://user-images.githubusercontent.com/3880463/163892816-9b818162-3fae-475d-a123-c0f4c6adee4a.png)
+![image](https://user-images.githubusercontent.com/3880463/163892843-970e2d88-94d0-4661-97b6-45a3f10d88ea.png)
+![image](https://user-images.githubusercontent.com/3880463/163893100-bed13f08-9277-4512-bd32-e5c3d7611fb1.png)
+
+
+
+
 
 
 ## License 📛
